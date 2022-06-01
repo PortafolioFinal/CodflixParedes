@@ -5,7 +5,6 @@
 }
 
 html{
-    /*font-size: 62.5%;*/
     font-family: 'DM Sans', sans-serif;
     background-color: black;
 }
@@ -15,26 +14,28 @@ html{
     --secondary-color: white;
 }
 
+footer {
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
 header{
     display: flex;
 }
 
 header h1{
-    margin: 10px 10px 10px 40px;
+    margin: 10px 0px 10px 40px;
     color: var(--secondary-color);
 }
 
 header h2{
-    margin: 25px 10px 10px 10px;
-}
-
-.logo{
-    position: relative;
-    left: 65rem;
+    margin: 15px 10px 10px 30px;
 }
 
 h2, h3{
     color: var(--secondary-color);
+    margin: 25px 10px 10px 10px;
 }
 
 ul li{
@@ -60,7 +61,20 @@ ul li a{
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/media/banner.jpg');
 }
 
+.banner__text{
+    text-align: center;
+    margin: 60px 50px 150px 50px;
+    font-size: 2.2rem;
+    border: solid black;
+}
+
 .banner__p{
     background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 20%;
+    position: relative;
+    left: 40%;
 }
+
+
 
