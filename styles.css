@@ -133,16 +133,30 @@ header nav ul li a {
   border-radius: 8px;
 }
 
-.contenedorArticulos, .contenedorArticulos article{
+.contenedorArticulos, 
+article{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.contenedorArticulos h2 {
+    text-align: center;
+}
+
 .contenedorArticulos article img {
-    width: 20%;
-    padding: 10px;
-    border-radius: 8px;
+  width: 20%;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+article h3{
+    padding: 25px;
+}
+
+article p {
+    padding: 20px;
+    text-align: justify;
 }
 
 /*Estilos del footer*/
