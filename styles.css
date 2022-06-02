@@ -122,6 +122,8 @@ header nav ul li a {
 
 .contenedor__card {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contenedor__card h3 {
@@ -138,6 +140,7 @@ article{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 10px;
 }
 
 .contenedorArticulos h2 {
@@ -146,7 +149,6 @@ article{
 
 .contenedorArticulos article img {
   width: 20%;
-  padding: 10px;
   border-radius: 8px;
 }
 
