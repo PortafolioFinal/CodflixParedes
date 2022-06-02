@@ -60,12 +60,21 @@ header nav ul li a {
   font-size: 2rem;
   width: 60%;
   padding: 20px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+
+#banner div h2 {
+    background-color: transparent;
 }
 
 #banner div p {
   text-align: center;
   padding: 30px;
   background-color: var(--fondo-color);
+  width: 40%;
 }
 
 /*Contenido de movies y series*/
