@@ -44,17 +44,32 @@ header nav ul li a {
 
 /*Estilos del banner*/
 
-#banner {
-  height: calc(95vh - 10vh);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/media/banner.jpg");
+#banner, #bannerSeries, #bannerMovies {
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#banner div {
+#banner {
+    height: calc(95vh - 10vh);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/media/banner.jpg");
+}
+
+#bannerSeries {
+    height: calc(70vh - 10vh);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/media/banner_series.jpg");
+}
+
+#bannerMovies {
+    height: calc(70vh - 10vh);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/media/banner_movies.jpg");
+}
+
+#banner div, #bannerSeries div, #bannerMovies div {
   color: var(--secondary-color);
   text-align: center;
   font-size: 2rem;
@@ -66,7 +81,7 @@ header nav ul li a {
   background-color: transparent;
 }
 
-#banner div h2 {
+#banner div h2, #bannerSeries div h2, #bannerMovies div h2 {
     background-color: transparent;
 }
 

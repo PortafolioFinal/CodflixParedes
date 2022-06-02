@@ -5,144 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../media/codflix.ico">
     <title>CODFLIX</title>
 </head>
 <body>
-    <!--Encabezado de la página Películas-->
+    <!--Encabezado de la página Series-->
     <header>
-        <h1>Películas</h1>
-        <h2 class="logo"><a href="../index.html"><img src="https://fontmeme.com/permalink/220601/48ffe94d5039f378584f526895f8a5a5.png" alt="fuente-de-netflix"></a></h2>
-        <!--<iframe name=Menu src="../components/menu.html"></iframe>-->
+        <h1><a href="../index.html"><img src="https://fontmeme.com/permalink/220531/9182e37213c203929df8ecf3f4db7bbc.png" alt="fuente-de-netflix"></a></h1>
+        <nav>
+            <!--Menú de navegación-->
+            <ul>
+                <li><a href="../pages/series.html">Series</a></li>
+                <li><a href="../pages/tendencias.html">Tendencias</a></li>
+                <li><a href="../pages/recomendados.html">Recomendados</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <!--Cuerpo de la página-->
     <main>
         <!--Banner-->
-        <section>
-            <h2>Banner</h2>
-            <h3>Más información</h3>
-            <p>Macabro | Gore | Terror | Independiente</p>
+        <section id="bannerMovies">
+            <div>
+                <h2>Películas</h2><br>
+            </div>
         </section>
-        <!--Sección recomendados-->
-        <section>
+        <br>
+        <!--Sección Mis recomendados-->
+        <section class="contenido">
             <h2>Recomendados</h2>
             <!--Slider-->
-            <div>
-                <p>Flecha</p>
-                <ul>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 1">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 2">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 3">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 4">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 5">
-                        </a>
-                    </li>
-                </ul>
-                <p>Flecha</p>
+            <div class="contenedor">
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/jrgifaYeUtTnaH7NF5Drkgjg2MB.jpg" alt="movie 1">
+                </article>
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg" alt="movie 2">
+                </article>
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/neMZH82Stu91d3iqvLdNQfqPPyl.jpg" alt="movie 3">
+                </article>
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg" alt="movie 4">
+                </article>
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/eO0QV5qJaEngP1Ax9w3eV6bJG2f.jpg" alt="movie 5">
+                </article>
             </div>
         </section>
         <!--Sección Acción-->
-        <section>
+        <section class="contenido">
             <h2>Acción</h2>
             <!--Slider-->
-            <div>
-                <p>Flecha</p>
-                <ul>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 1">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 2">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 3">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 4">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 5">
-                        </a>
-                    </li>
-                </ul>
-                <p>Flecha</p>
+            <div class="contenedor">
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/jrgifaYeUtTnaH7NF5Drkgjg2MB.jpg" alt="movie 1">
+                </article>
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg" alt="movie 2">
+                </article>
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/neMZH82Stu91d3iqvLdNQfqPPyl.jpg" alt="movie 3">
+                </article>
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg" alt="movie 4">
+                </article>
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/eO0QV5qJaEngP1Ax9w3eV6bJG2f.jpg" alt="movie 5">
+                </article>
             </div>
         </section>
-        <!--Sección Comedia-->
-        <section>
-            <h2>Comedia</h2>
+        <!--Sección Comedias-->
+        <section class="contenido">
+            <h2>Comedias</h2>
             <!--Slider-->
-            <div>
-                <p>Flecha</p>
-                <ul>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 1">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 2">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 3">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 4">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Título del film</p>
-                            <img src="" alt="foto 5">
-                        </a>
-                    </li>
-                </ul>
-                <p>Flecha</p>
+            <div class="contenedor">
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/jrgifaYeUtTnaH7NF5Drkgjg2MB.jpg" alt="movie 1">
+                </article>
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg" alt="movie 2">
+                </article>
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/neMZH82Stu91d3iqvLdNQfqPPyl.jpg" alt="movie 3">
+                </article>
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg" alt="movie 4">
+                </article>
+                <article class="contenedor__card">
+                    <h3>Título movie</h3>
+                    <img src="https://image.tmdb.org/t/p/w500/eO0QV5qJaEngP1Ax9w3eV6bJG2f.jpg" alt="movie 5">
+                </article>
             </div>
         </section>
     </main>
