@@ -44,7 +44,9 @@ header nav ul li a {
 
 /*Estilos del banner*/
 
-#banner, #bannerSeries, #bannerMovies {
+#banner,
+#bannerSeries,
+#bannerMovies {
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -52,37 +54,41 @@ header nav ul li a {
 }
 
 #banner {
-    height: calc(95vh - 10vh);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  height: calc(95vh - 10vh);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("/media/banner.jpg");
 }
 
 #bannerSeries {
-    height: calc(70vh - 10vh);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  height: calc(70vh - 10vh);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("/media/banner_series.jpg");
 }
 
 #bannerMovies {
-    height: calc(70vh - 10vh);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  height: calc(70vh - 10vh);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("/media/banner_movies.jpg");
 }
 
-#banner div, #bannerSeries div, #bannerMovies div {
+#banner div,
+#bannerSeries div,
+#bannerMovies div {
   color: var(--secondary-color);
   text-align: center;
   font-size: 2rem;
   width: 60%;
   padding: 20px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: transparent;
 }
 
-#banner div h2, #bannerSeries div h2, #bannerMovies div h2 {
-    background-color: transparent;
+#banner div h2,
+#bannerSeries div h2,
+#bannerMovies div h2 {
+  background-color: transparent;
 }
 
 #banner div p {
@@ -90,6 +96,11 @@ header nav ul li a {
   padding: 30px;
   background-color: var(--fondo-color);
   width: 40%;
+}
+
+#tendencias {
+  color: var(--secondary-color);
+  padding: 20px;
 }
 
 /*Contenido de movies y series*/
@@ -114,18 +125,30 @@ header nav ul li a {
 }
 
 .contenedor__card h3 {
-    padding: 15px;
+  padding: 15px;
 }
 
 .contenedor__card img {
-    width: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.contenedorArticulos, .contenedorArticulos article{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contenedorArticulos article img {
+    width: 20%;
+    padding: 10px;
     border-radius: 8px;
 }
 
 /*Estilos del footer*/
 
 footer {
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 40px;
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 40px;
 }
