@@ -98,7 +98,7 @@ header nav ul li a {
   width: 40%;
 }
 
-#tendencias {
+#tendencias, #contacto {
   color: var(--secondary-color);
   padding: 20px;
 }
@@ -159,6 +159,22 @@ article h3{
 article p {
     padding: 20px;
     text-align: justify;
+}
+
+#contacto {
+    color: var(--secondary-color);
+    text-align: justify;
+}
+
+form {
+    border: solid 2px var(--primary-color);
+    padding: 10px;
+    margin: 20px;
+}
+
+form p {
+    padding: 10px;
+
 }
 
 /*Estilos del footer*/
