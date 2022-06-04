@@ -98,14 +98,16 @@ header nav ul li a {
   width: 40%;
 }
 
-#tendencias, #contacto {
+#tendencias,
+#contacto {
   color: var(--secondary-color);
   padding: 20px;
 }
 
 /*Contenido de movies y series*/
 
-.contenido {
+.contenido,
+#contacto {
   color: var(--secondary-color);
 }
 
@@ -135,8 +137,8 @@ header nav ul li a {
   border-radius: 8px;
 }
 
-.contenedorArticulos, 
-article{
+.contenedorArticulos,
+article {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -144,7 +146,7 @@ article{
 }
 
 .contenedorArticulos h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .contenedorArticulos article img {
@@ -152,29 +154,53 @@ article{
   border-radius: 8px;
 }
 
-article h3{
-    padding: 25px;
+article h3 {
+  padding: 25px;
 }
 
 article p {
-    padding: 20px;
-    text-align: justify;
-}
-
-#contacto {
-    color: var(--secondary-color);
-    text-align: justify;
+  padding: 20px;
+  text-align: justify;
 }
 
 form {
-    border: solid 2px var(--primary-color);
-    padding: 10px;
-    margin: 20px;
+  padding: 20px;
+  color: var(--secondary-color);
 }
 
 form p {
-    padding: 10px;
+  padding: 10px;
+}
 
+form fieldset {
+  border-radius: 8px;
+}
+
+#formulario {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+#formulario div {
+  width:45%; 
+  margin-bottom:1%;
+}
+
+#formulario textarea {
+  width: 100%;
+  border-radius: 8px;
+}
+
+label {
+  width: 400px;
+}
+
+#button {
+  color: var(--primary-color);
+  text-align: center; 
+  margin-top:1%;
 }
 
 /*Estilos del footer*/
@@ -183,4 +209,5 @@ footer {
   color: var(--secondary-color);
   text-align: center;
   padding: 40px;
+  margin: 10px;
 }

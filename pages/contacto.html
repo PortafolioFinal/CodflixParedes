@@ -25,25 +25,40 @@
             <div>
               <h2>Contacto</h2>
               <br />
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis facere vero corporis, voluptatibus doloremque qui autem ad voluptatum temporibus minima vitae aut dolorem ducimus ea vel nisi assumenda commodi minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa accusantium cumque qui doloribus, ut recusandae, ipsam ratione at, ipsum cum inventore deserunt repellendus hic aperiam explicabo voluptate tenetur omnis atque.</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis facere vero corporis, voluptatibus doloremque qui autem ad voluptatum temporibus minima vitae aut dolorem ducimus ea vel nisi assumenda commodi minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
             </div>
         </section>
-        <br />
-        <section class="contenido">
+        <section>
             <!--Formulario de contacto-->
             <form>
-                <p>Envía un mensaje</p>
+                <fieldset>
+                <legend>Envía un mensaje: </legend>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque labore dignissimos facere odit ex quisquam sunt, error voluptas pariatur, dolorum excepturi eaque at possimus maiores, ratione quidem assumenda molestiae iure.</p>
-                <label>Nombre</label>
-                <input type="text" value="Escriba su nombre completo">
-                <label>Email</label>
-                <input type="mail" value="usuario@mail.com">
-                <label>Teléfono</label>
-                <input type="phone" value="Número de teléfono">
-                <label>Organización</label>
-                <input type="text" value="Nombre de la organización">
-                <textarea>Escriba aquí el mensaje</textarea>
-                <input type="submit" value="Enviar"/>
+
+                <div>
+                    <div id="formulario">
+                        <div>
+                            <label>Username</label>
+                            <input  type="text" placeholder="Escriba su nombre completo">
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input  type="text" placeholder="usuario@mail.com">
+                        </div>
+                        <div>
+                            <label>Telefono</label>
+                            <input type="number" placeholder="&#xf007;Número de teléfono">
+                        </div>
+                        <div>
+                            <label>Organización</label>
+                            <input  type="text" placeholder="Nombre de la organización">
+                        </div>
+                        <textarea cols="100" rows="15" placeholder="Escriba aquí el mensaje"></textarea>
+                    </div>
+                    <div id="button">
+                        <button>Enviar</button>
+                    </div>
+                </div>
             </form>
         </section>
     </main>
