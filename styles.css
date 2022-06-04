@@ -172,8 +172,12 @@ form p {
   padding: 20px;
 }
 
-form fieldset {
+fieldset {
   border-radius: 8px;
+}
+
+legend {
+  margin:2%;
 }
 
 #formulario {
@@ -204,11 +208,18 @@ textarea {
   border-radius: 8px;
 }
 
+#boton{
+  text-align: center;
+}
+
 button {
-  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  background-color: var(--fondo-color);
   margin:1%;
-  display: flex;
-  align-items: center;
+  width: 10%;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 20px;
 }
 
 /*Estilos del footer*/
