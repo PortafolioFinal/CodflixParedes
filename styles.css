@@ -56,19 +56,19 @@ header nav ul li a {
 #banner {
   height: calc(95vh - 10vh);
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/media/banner.jpg");
+    url("./media/banner.jpg");
 }
 
 #bannerSeries {
   height: calc(70vh - 10vh);
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/media/banner_series.jpg");
+    url("./media/banner_series.jpg");
 }
 
 #bannerMovies {
   height: calc(70vh - 10vh);
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/media/banner_movies.jpg");
+    url("./media/banner_movies.jpg");
 }
 
 #banner div,
