@@ -163,6 +163,10 @@ article p {
   text-align: justify;
 }
 
+#keys {
+  text-align: center;
+}
+
 form {
   padding: 20px;
   color: var(--secondary-color);
@@ -177,7 +181,7 @@ fieldset {
 }
 
 legend {
-  margin:2%;
+  margin: 2%;
 }
 
 #formulario {
@@ -188,8 +192,8 @@ legend {
 }
 
 #formulario div {
-  width:45%; 
-  margin-bottom:3%;
+  width: 45%;
+  margin-bottom: 3%;
 }
 
 label {
@@ -208,14 +212,14 @@ textarea {
   border-radius: 8px;
 }
 
-#boton{
+#boton {
   text-align: center;
 }
 
 button {
   color: var(--secondary-color);
   background-color: var(--fondo-color);
-  margin:1%;
+  margin: 1%;
   width: 10%;
   height: 50px;
   border-radius: 8px;
