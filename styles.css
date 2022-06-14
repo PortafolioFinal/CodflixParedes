@@ -50,8 +50,16 @@ header nav ul li a {
   margin-top: 50px;
   text-align: center;
   color: var(--secondary-color);
+}
+.bannerIndex {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("./media/banner.jpg");
+  url("./media/banner.jpg");
+}
+.bannerSeries {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner_series.jpg");
+}
+.bannerPeliculas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner_movies.jpg");
 }
 .banner div {
   padding: 15%;
@@ -98,6 +106,9 @@ header nav ul li a {
 .card4 { grid-area: 2 / 3 / 3 / 5; }
 .card5 { grid-area: 2 / 5 / 3 / 7; }
 
+.contenedor__card:hover {
+  transform: scale(120%);
+}
 .contenedor__card h3 {
   padding: 0 0 5px 5px;
   font-size: 90%;
