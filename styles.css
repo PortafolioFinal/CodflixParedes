@@ -41,11 +41,6 @@ header nav ul li a {
   font-size: 120%;
 }
 
-/*Estilos Grid*/
-main {
-  grid-area: main;
-}
-
 /*Estilos del main - Banner*/
 .banner {
   width: 100%;
@@ -88,11 +83,8 @@ main {
   grid-area: title;
 }
 .contenedor {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 50%;
   grid-area: contenedor;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -108,6 +100,7 @@ main {
 
 .contenedor__card h3 {
   padding: 0 0 5px 5px;
+  font-size: 90%;
 }
 .contenedor__card img {
   width: 100%;
