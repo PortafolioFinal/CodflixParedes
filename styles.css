@@ -1,236 +1,105 @@
 /*Estilos globales*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
-  background-color: black;
+:root {
   --primary-color: #e50914;
   --secondary-color: white;
   --fondo-color: #e5091441;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+  background-color: black;
+}
 
 /*Estilos del encabezado*/
-
 header {
-  padding: 30px;
-  height: 10vh;
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 10px;
+  text-align: center;
+  margin-top: 30px;
 }
-
-header nav {
-  width: 40%;
-}
-
 header nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
 }
-
 header nav ul li {
   display: inline-block;
   list-style: none;
 }
-
 header nav ul li a {
   text-decoration: none;
   color: var(--secondary-color);
-  font-weight: 1.2rem;
+  font-size: 120%;
 }
 
-/*Estilos del banner*/
-
-#banner,
-#bannerSeries,
-#bannerMovies {
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#banner {
-  height: calc(95vh - 10vh);
+/*Estilos del main - Banner*/
+.banner {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+  color: var(--secondary-color);
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("./media/banner.jpg");
 }
-
-#bannerSeries {
-  height: calc(70vh - 10vh);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("./media/banner_series.jpg");
-}
-
-#bannerMovies {
-  height: calc(70vh - 10vh);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("./media/banner_movies.jpg");
-}
-
-#banner div,
-#bannerSeries div,
-#bannerMovies div {
-  color: var(--secondary-color);
-  text-align: center;
-  font-size: 2rem;
-  width: 60%;
-  padding: 20px;
+.banner div {
+  padding: 15%;
+  font-size: 120%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: transparent;
 }
-
-#banner div h2,
-#bannerSeries div h2,
-#bannerMovies div h2 {
-  background-color: transparent;
+.banner h2 {
+  padding: 5%;
 }
-
-#banner div p {
-  text-align: center;
-  padding: 30px;
+.banner p {
   background-color: var(--fondo-color);
+  padding: 5%;
   width: 40%;
 }
 
-#tendencias,
-#contacto {
-  color: var(--secondary-color);
-  padding: 20px;
+/*Estilos del main - Secciones*/
+.contenido {
+  color:var(--secondary-color);
+  padding: 20px 15px 10px 15px;
 }
-
-/*Contenido de movies y series*/
-
-.contenido,
-#contacto {
-  color: var(--secondary-color);
-}
-
 .contenido h2 {
-  padding: 20px;
+  padding-bottom: 20px;
 }
-
 .contenedor {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-size: 50%;
 }
-
 .contenedor__card {
-  padding: 20px;
+  padding: 2px;
   display: flex;
   flex-direction: column;
 }
-
 .contenedor__card h3 {
-  padding: 15px;
+  padding: 0 0 5px 5px;
 }
-
 .contenedor__card img {
   width: 100%;
   border-radius: 8px;
 }
 
-.contenedorArticulos,
-article {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.contenedorArticulos h2 {
-  text-align: center;
-}
-
-.contenedorArticulos article img {
-  width: 20%;
-  border-radius: 8px;
-}
-
-article h3 {
-  padding: 25px;
-}
-
-article p {
-  padding: 20px;
-  text-align: justify;
-}
-
-#keys {
-  text-align: center;
-}
-
-form {
-  padding: 20px;
-  color: var(--secondary-color);
-}
-
-form p {
-  padding: 20px;
-}
-
-fieldset {
-  border-radius: 8px;
-}
-
-legend {
-  margin: 2%;
-}
-
-#formulario {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-#formulario div {
-  width: 45%;
-  margin-bottom: 3%;
-}
-
-label {
-  margin: 5% 0 2% 0;
-}
-
-input {
-  width: 90%;
-  height: 70%;
-  margin: 1% 0 2% 0;
-}
-
-textarea {
-  margin-top: 2%;
-  width: 100%;
-  border-radius: 8px;
-}
-
-#boton {
-  text-align: center;
-}
-
-button {
-  color: var(--secondary-color);
-  background-color: var(--fondo-color);
-  margin: 1%;
-  width: 10%;
-  height: 50px;
-  border-radius: 8px;
-  font-size: 20px;
-}
-
 /*Estilos del footer*/
-
 footer {
   color: var(--secondary-color);
   text-align: center;
-  padding: 40px;
-  margin: 10px;
+  padding: 10px;
 }
