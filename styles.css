@@ -41,6 +41,11 @@ header nav ul li a {
   font-size: 120%;
 }
 
+/*Estilos Grid*/
+main {
+  grid-area: main;
+}
+
 /*Estilos del main - Banner*/
 .banner {
   width: 100%;
@@ -73,9 +78,14 @@ header nav ul li a {
 .contenido {
   color:var(--secondary-color);
   padding: 20px 15px 10px 15px;
+  display: grid;
+  grid-template-areas: 
+  "title title"
+  "contenedor contenedor";
 }
 .contenido h2 {
   padding-bottom: 20px;
+  grid-area: title;
 }
 .contenedor {
   display: flex;
@@ -83,12 +93,19 @@ header nav ul li a {
   justify-content: space-between;
   align-items: center;
   font-size: 50%;
+  grid-area: contenedor;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
 }
-.contenedor__card {
-  padding: 2px;
-  display: flex;
-  flex-direction: column;
-}
+
+.card1 { grid-area: 1 / 1 / 2 / 4; }
+.card2 { grid-area: 1 / 4 / 2 / 7; }
+.card3 { grid-area: 2 / 1 / 3 / 3; }
+.card4 { grid-area: 2 / 3 / 3 / 5; }
+.card5 { grid-area: 2 / 5 / 3 / 7; }
+
 .contenedor__card h3 {
   padding: 0 0 5px 5px;
 }
