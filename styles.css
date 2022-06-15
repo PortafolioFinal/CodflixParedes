@@ -156,6 +156,10 @@ fieldset {
 }
 input {
   width: 100%;
+  border-radius: 4px;
+}
+textarea {
+  border-radius: 8px;
 }
 #formulario {
   width: 100%;
@@ -172,7 +176,7 @@ input {
 .item4 { grid-area: 3 / 1 / 4 / 5; }
 .item5 { grid-area: 3 / 5 / 4 / 9; }
 .item6 { grid-area: 4 / 1 / 8 / 9; }
-.item7 { grid-area: 8 / 4 / 9 / 6; }
+.item7 { grid-area: 8 / 4 / 9 / 6; text-align: center;}
 
 /*Estilos del footer*/
 footer {
