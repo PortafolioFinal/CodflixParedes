@@ -191,9 +191,58 @@ footer {
   padding: 10px;
 }
 
-/*Responsive*/
+/*Responsive tableta*/
 @media screen and (min-width:760px){
   body{
     font-size: 150%;
+  }
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contenedor__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor__card h3 {
+    padding: 15px;
+  }
+  .contenedor,
+  article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .contenedor h2 {
+    text-align: center;
+  }
+  .bannerPeliculas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner_movies_responsive.jpg");
+  }
+  .tendencias img {
+    width: 10%;
+  }
+  input {
+    height: 50%;
+  }
+  ::placeholder {
+    font-size: 100%;
+  }
+}
+
+/*Responsive tableta*/
+@media screen and (min-width:1024px) {
+  header {
+    flex-direction: row;
+  }
+  header nav {
+    display: flex;
+    text-align: right;
+  }
+  header nav ul {
+    justify-content:space-between;
   }
 }
