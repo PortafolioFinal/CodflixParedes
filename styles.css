@@ -150,6 +150,9 @@ form {
   color: var(--secondary-color);
   text-align: justify;
 }
+#contacto h2 {
+  padding: 10px;
+}
 fieldset {
   border-radius: 8px;
   padding: 8px;
@@ -160,6 +163,9 @@ input {
 }
 textarea {
   border-radius: 8px;
+}
+::placeholder {
+  font-size: 60%;
 }
 #formulario {
   width: 100%;
@@ -183,4 +189,11 @@ footer {
   color: var(--secondary-color);
   text-align: center;
   padding: 10px;
+}
+
+/*Responsive*/
+@media screen and (min-width:760px){
+  body{
+    font-size: 150%;
+  }
 }
