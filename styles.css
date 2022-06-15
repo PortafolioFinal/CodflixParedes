@@ -138,6 +138,10 @@ header nav ul li a {
 .tendencias p {
   text-align: justify;
 }
+#keys {
+  text-align: center;
+  padding-top: 5px;
+}
 /*Estilos del footer*/
 footer {
   color: var(--secondary-color);
