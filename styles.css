@@ -236,13 +236,20 @@ footer {
 /*Responsive tableta*/
 @media screen and (min-width:1024px) {
   header {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   header nav {
-    display: flex;
-    text-align: right;
+    width: 40%;
+    padding: 0 10px 0 0;
   }
   header nav ul {
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tendencias img {
+    width: 20%;
   }
 }
