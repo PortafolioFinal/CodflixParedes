@@ -233,7 +233,7 @@ footer {
   }
 }
 
-/*Responsive tableta*/
+/*Responsive escritorio*/
 @media screen and (min-width:1024px) {
   header {
     display: flex;
