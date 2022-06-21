@@ -39,6 +39,10 @@ header nav ul li a {
   text-decoration: none;
   color: var(--secondary-color);
   font-size: 120%;
+  transition: color 5s;
+}
+header nav ul li a:hover {
+  color: var(--primary-color);
 }
 main {
   overflow: hidden;
@@ -74,10 +78,43 @@ main {
 .banner h2 {
   padding: 5%;
 }
+.bannerSeries h2,
+.bannerPeliculas h2{
+  animation-duration: 5s;
+  animation-name: entrar;
+  animation-iteration-count: 1;
+}
+@keyframes entrar {
+  0% {
+    opacity: 0;
+    font-size: 60%;
+  }
+  25% {
+    opacity: 0.25;
+    font-size: 120%;
+  }
+  50% {
+    opacity: 0.5;
+    font-size: 180%;
+  }
+  75% {
+    opacity: 0.75;
+    font-size: 240%;
+  }
+  100% {
+    opacity: 1;
+    font-size: 240%;
+    color: var(--primary-color);
+  }
+}
+
 .banner p {
   background-color: var(--fondo-color);
   padding: 5%;
   width: 40%;
+}
+.banner p:hover {
+  transform: scale(120%);
 }
 
 /*Estilos del main - Secciones*/
@@ -92,6 +129,10 @@ main {
 .contenido h2 {
   padding-bottom: 20px;
   grid-area: title;
+  transition: color 5s;
+}
+.contenido h2:hover {
+  color: var(--primary-color);
 }
 .contenedor {
   justify-content: space-between;
@@ -125,6 +166,12 @@ main {
 #tendencias {
   padding: 50px 0 0 35px;
   color: var(--secondary-color);
+}
+#tendencias h2 {
+  transition: color 5s;
+}
+#tendencias h2:hover {
+  color: var(--primary-color)
 }
 .tendencias {
   display: flex;
@@ -187,6 +234,16 @@ textarea {
 .item6 { grid-area: 4 / 1 / 8 / 9; }
 .item7 { grid-area: 8 / 4 / 9 / 6; text-align: center;}
 
+button {
+  background-color: var(--primary-color);
+  font-size: 120%;
+  padding: 10PX;
+  border-radius: 8px;
+}
+button:hover {
+  background-color: var(--fondo-color);
+  color: var(--secondary-color);
+}
 /*Estilos del footer*/
 footer {
   color: var(--secondary-color);
