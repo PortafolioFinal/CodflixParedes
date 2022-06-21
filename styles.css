@@ -19,14 +19,13 @@ html {
 header {
   position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-}
-
-header nav {
-  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 10px;
+  text-align: center;
+  margin-top: 30px;
 }
 header nav ul {
   display: flex;
@@ -43,16 +42,6 @@ header nav ul li a {
 }
 main {
   overflow: hidden;
-}
-/*Estilos del banner*/
-
-#banner,
-#bannerSeries,
-#bannerMovies {
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /*Estilos del main - Banner*/
