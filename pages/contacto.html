@@ -24,7 +24,6 @@
       <section id="contacto">
         <div>
           <h2>Contacto</h2>
-          <br />
           <p>
             Codflix es un sitio web en donde encontrarás sinopsis, reseñas y recomendaciones de películas, series y más. Para nosotros es importante conocer tu opinión, y por supuesto, resolver sus dudas e inquietudes.
           </p>
@@ -35,35 +34,37 @@
         <form>
           <fieldset>
             <legend>Envía un mensaje:</legend>
-            <p>
-              Completa el siguiente formulario, y un miembro de nuestro equipo se pondrá en contacto para obtener más información sobre sus dudas e inquietudes.
-            </p>
+            
             <div id="formulario">
-              <div>
-                <label>Nombre</label><br />
+              <p class="item1">
+                Completa el siguiente formulario, y un miembro de nuestro equipo se pondrá en contacto para obtener más información sobre sus dudas e inquietudes.
+              </p>
+              <div class="item2">
+                <label>Nombre</label>
                 <input type="text" placeholder="Escriba su nombre completo" />
               </div>
-              <div>
-                <label>Email</label><br />
+              <div class="item3">
+                <label>Email</label>
                 <input type="text" placeholder="usuario@mail.com" />
               </div>
-              <div>
-                <label>Telefono</label><br />
+              <div class="item4">
+                <label>Telefono</label>
                 <input type="number" placeholder="Número de teléfono" />
               </div>
-              <div>
-                <label>Organización</label><br />
+              <div class="item5">
+                <label>Organización</label>
                 <input type="text" placeholder="Nombre de la organización" />
               </div>
               <textarea
                 cols="100"
                 rows="15"
                 placeholder="Escriba aquí el mensaje"
+                class="item6"
               ></textarea>
-            </div>
-            <div  id="boton">
+              <div  class="item7">
                 <button>Enviar</button>
-            </div>  
+            </div>
+            </div>   
           </fieldset>
         </form>
       </section>
