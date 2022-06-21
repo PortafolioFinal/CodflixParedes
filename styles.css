@@ -20,6 +20,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 header nav {
@@ -41,7 +42,9 @@ header nav ul li a {
   color: var(--secondary-color);
   font-weight: 1.2rem;
 }
-
+main {
+  overflow: hidden;
+}
 /*Estilos del banner*/
 
 #banner,
