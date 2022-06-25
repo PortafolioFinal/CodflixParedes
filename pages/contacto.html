@@ -21,10 +21,10 @@
       </h1>
     </header>
     <!--Cuerpo de la página-->
-    <main>
-      <section id="contacto">
-        <div>
-          <h2>Contacto</h2>
+    <main class="bg-dark">
+      <section>
+        <div class="text-light p-2">
+          <h2 class="text-center">Contacto</h2>
           <p>
             Codflix es un sitio web en donde encontrarás sinopsis, reseñas y recomendaciones de películas, series y más. Para nosotros es importante conocer tu opinión, y por supuesto, resolver sus dudas e inquietudes.
           </p>
@@ -32,38 +32,38 @@
       </section>
       <section>
         <!--Formulario de contacto-->
-        <form>
+        <form class="p-2 text-light">
           <fieldset>
             <legend>Envía un mensaje:</legend>
-            
-            <div id="formulario">
-              <p class="item1">
+            <div class="row">
+              <p>
                 Completa el siguiente formulario, y un miembro de nuestro equipo se pondrá en contacto para obtener más información sobre sus dudas e inquietudes.
               </p>
-              <div class="item2">
+              <div class="col-6">
                 <label>Nombre</label>
-                <input type="text" placeholder="Escriba su nombre completo" />
+                <input class="form-control" type="text" placeholder="Escriba su nombre completo" />
               </div>
-              <div class="item3">
+              <div class="col-6">
                 <label>Email</label>
-                <input type="text" placeholder="usuario@mail.com" />
-              </div>
-              <div class="item4">
+                <input class="form-control" type="text" placeholder="usuario@mail.com" />
+              </div> 
+              <div class="col-6">
                 <label>Telefono</label>
-                <input type="number" placeholder="Número de teléfono" />
+                <input class="form-control" type="number" placeholder="Número de teléfono" />
               </div>
-              <div class="item5">
+              <div class="col-6">
                 <label>Organización</label>
-                <input type="text" placeholder="Nombre de la organización" />
+                <input class="form-control" type="text" placeholder="Nombre de la organización" />
               </div>
-              <textarea
-                cols="100"
-                rows="15"
+              <div class="pt-4">
+                <textarea
+                class="form-control form-floating"
                 placeholder="Escriba aquí el mensaje"
-                class="item6"
-              ></textarea>
-              <div  class="item7">
-                <button>ENVIAR</button>
+                id="floatingTextarea2"
+                ></textarea>
+              </div>
+              <div class="text-center p-3">
+                <button class="btn btn-danger">ENVIAR</button>
             </div>
             </div>   
           </fieldset>
@@ -71,8 +71,8 @@
       </section>
     </main>
     <!--Pie de la página-->
-    <footer>
-      <p>@ 2022 CODFLIX, Inc</p>
+    <footer class="bg-dark text-light text-center p-4">
+      <p>@ 2022 CODFLIX, Inc.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
   </body>
