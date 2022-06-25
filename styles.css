@@ -6,12 +6,15 @@
 main {
   overflow: hidden;
 }
-section p {
+.fondo {
   background-color: var(--fondo-color);
 }
-.banner p:hover,
-section article:hover {
+.scale:hover {
   transform: scale(120%);
+}
+.imagen {
+  width:150px;
+  height:auto;
 }
 
 

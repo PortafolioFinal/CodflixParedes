@@ -19,6 +19,9 @@
   section article:hover {
     transform: scale(120%);
   }
+  .imagen {
+    width:150px;
+  }
  
 
 
