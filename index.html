@@ -4,119 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" href="./media/codflix.ico">
     <title>CODFLIX</title>
 </head>
 <body>
     <!--Encabezado de la página Home-->
-    <header>
+    <header class="navbar navbar-expand-lg bg-dark">
         <h1><img src="https://fontmeme.com/permalink/220531/9182e37213c203929df8ecf3f4db7bbc.png" alt="fuente-de-netflix"></h1>
-        <nav>
+        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <!--Menú de navegación-->
-            <ul>
-                <li><a href="./pages/series.html">Series</a></li>
-                <li><a href="./pages/peliculas.html">Películas</a></li>
-                <li><a href="./pages/tendencias.html">Tendencias</a></li>
-                <li><a href="./pages/recomendados.html">Recomendados</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+            <ul class="navbar-nav">
+                <li><a class="nav-link active text-light" aria-current="page" href="./pages/series.html">Series</a></li>
+                <li><a class="nav-link active text-light" aria-current="page" href="./pages/peliculas.html">Películas</a></li>
+                <li><a class="nav-link active text-light" aria-current="page" href="./pages/tendencias.html">Tendencias</a></li>
+                <li><a class="nav-link active text-light" aria-current="page" href="./pages/recomendados.html">Recomendados</a></li>
+                <li><a class="nav-link active text-light" aria-current="page" href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <!--Cuerpo de la página-->
-    <main>
+    <main class="bg-dark">
         <!--Banner-->
-        <section class="banner bannerIndex">
-            <div>
-                <h2>Información sobre películas, series y más.</h2>
-                <p>Empieza ahora</p>
+        <section class="bg-dark text-white position-relative banner">
+            <img class="img-fluid card-img opacity-25" src="../media/banner.jpg" alt="">
+            <div class="position-absolute top-50 start-50 translate-middle text-center">
+                <h2 class="fs-1 p-5">Información sobre películas, series y más.</h2>
+                <p class="fs-4 badge p-5">Empieza ahora</p>
             </div>
         </section>
-        <!--Sección Mis recomendados-->
-        <section class="contenido">
-            <h2>Mis recomendados</h2>
+        <!--Sección Mis Recomendados-->
+        <section class="container-fluid">
+            <h2 class="text-light p-4 text-center">Mis recomendados</h2>
             <!--Slider-->
-            <div class="contenedor">
-                <article class="contenedor__card card1">
-                    <h3>Fantastic Beasts</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/jrgifaYeUtTnaH7NF5Drkgjg2MB.jpg" alt="movie 1">
+            <div class="row">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">Fantastic Beasts</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/jrgifaYeUtTnaH7NF5Drkgjg2MB.jpg" alt="movie 1">
                 </article>
-                <article class="contenedor__card card2">
-                    <h3>Morbius</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg" alt="movie 2">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">Morbius</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg" alt="movie 2">
                 </article>
-                <article class="contenedor__card card3">
-                    <h3>The Lost City</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/neMZH82Stu91d3iqvLdNQfqPPyl.jpg" alt="movie 3">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">The Lost City</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/neMZH82Stu91d3iqvLdNQfqPPyl.jpg" alt="movie 3">
                 </article>
-                <article class="contenedor__card card4">
-                    <h3>Stranger Things</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg" alt="movie 4">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">Stranger Things</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg" alt="movie 4">
                 </article>
-                <article class="contenedor__card card5">
-                    <h3>Halo</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/eO0QV5qJaEngP1Ax9w3eV6bJG2f.jpg" alt="movie 5">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">Halo</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/eO0QV5qJaEngP1Ax9w3eV6bJG2f.jpg" alt="movie 5">
                 </article>
             </div>
         </section>
         <!--Sección Tendencias-->
-        <section class="contenido">
-            <h2>Tendencias</h2>
+        <section class="container-fluid">
+            <h2 class="text-light p-4 text-center">Tendencias</h2>
             <!--Slider-->
-            <div class="contenedor">
-                <article class="contenedor__card card1">
-                    <h3>Sonic</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg" alt="movie 1">
+            <div class="row">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">Sonic</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg" alt="movie 1">
                 </article>
-                <article class="contenedor__card card2">
-                    <h3>The Northman</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg" alt="movie 2">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">The Northman</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg" alt="movie 2">
                 </article>
-                <article class="contenedor__card card3">
-                    <h3>Memory</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/4Q1n3TwieoULnuaztu9aFjqHDTI.jpg" alt="movie 3">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">Memory</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/4Q1n3TwieoULnuaztu9aFjqHDTI.jpg" alt="movie 3">
                 </article>
-                <article class="contenedor__card card4">
-                    <h3>Hidden Passion</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/lWlsZIsrGVWHtBeoOeLxIKDd9uy.jpg" alt="movie 4">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">Hidden Passion</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/lWlsZIsrGVWHtBeoOeLxIKDd9uy.jpg" alt="movie 4">
                 </article>
-                <article class="contenedor__card card5">
-                    <h3>Moon Knight</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/YksR65as1ppF2N48TJAh2PLamX.jpg" alt="movie 5">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">Moon Knight</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/YksR65as1ppF2N48TJAh2PLamX.jpg" alt="movie 5">
                 </article>
             </div>
         </section>
         <!--Sección Nuevos lanzamientos-->
-        <section class="contenido">
-            <h2>Nuevos lanzamientos</h2>
+        <section class="container-fluid">
+            <h2 class="text-light p-4 text-center">Nuevos lanzamientos</h2>
             <!--Slider-->
-            <div class="contenedor">
-                <article class="contenedor__card card1">
-                    <h3>Uncharted</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/tlZpSxYuBRoVJBOpUrPdQe9FmFq.jpg" alt="movie 1">
+            <div class="row">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">Uncharted</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/tlZpSxYuBRoVJBOpUrPdQe9FmFq.jpg" alt="movie 1">
                 </article>
-                <article class="contenedor__card card2">
-                    <h3>Doctor Strange</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="movie 2">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">Doctor Strange</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="movie 2">
                 </article>
-                <article class="contenedor__card card3">
-                    <h3>Spider-Man</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" alt="movie 3">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">Spider-Man</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" alt="movie 3">
                 </article>
-                <article class="contenedor__card card4">
-                    <h3>Pantanal</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/4Ru1BwcAKWtpM345dWe8YgHf35V.jpg" alt="movie 4">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">Pantanal</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/4Ru1BwcAKWtpM345dWe8YgHf35V.jpg" alt="movie 4">
                 </article>
-                <article class="contenedor__card card5">
-                    <h3>SPY×FAMILY</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/3r4LYFuXrg3G8fepysr4xSLWnQL.jpg" alt="movie 5">
+                <article class="card mb-3 col bg-dark">
+                    <p class="card-header text-light">SPY×FAMILY</p>
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/3r4LYFuXrg3G8fepysr4xSLWnQL.jpg" alt="movie 5">
                 </article>
             </div>
         </section>
     </main>
     <!--Pie de la página-->
-    <footer>
+    <footer class="bg-dark text-light text-center p-4">
         <p>@ 2022 CODFLIX, Inc.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>
