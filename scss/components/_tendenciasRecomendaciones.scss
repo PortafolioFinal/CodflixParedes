@@ -1,0 +1,35 @@
+#tendencias {
+    padding: 50px 0 0 35px;
+    color: $secondary-color;
+
+    h2 {
+        transition: color 5s;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.tendencias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    color: $secondary-color;
+
+    img {
+        width: 100%;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    p {
+        text-align: justify;
+    }
+}
+
+#keys {
+    text-align: center;
+    padding-top: 5px;
+}

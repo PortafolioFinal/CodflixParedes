@@ -1,0 +1,58 @@
+@media screen and (min-width: $medium){
+    
+    body {
+        font-size: 150%;
+    }
+
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenedor__card {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            padding: 15px;
+        }
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .bannerPeliculas {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner_movies_responsive.jpg");
+    }
+
+    .tendencias {
+        img {
+            width: 10%;
+        }
+    }
+
+    input {
+        height: 50%; 
+    }
+
+    ::placeholder {
+        font-size: 100%;
+    }
+}

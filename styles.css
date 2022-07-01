@@ -1,21 +1,15 @@
-/*Estilos globales*/
-:root {
-  --primary-color: #e50914;
-  --secondary-color: white;
-  --fondo-color: #e5091441;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
   background-color: black;
 }
 
-/*Estilos del encabezado*/
 header {
   position: relative;
   display: flex;
@@ -29,7 +23,7 @@ header {
 }
 header nav ul {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 header nav ul li {
   display: inline-block;
@@ -37,18 +31,18 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: white;
   font-size: 120%;
   transition: color 5s;
 }
 header nav ul li a:hover {
-  color: var(--primary-color);
+  color: #e50914;
 }
+
 main {
   overflow: hidden;
 }
 
-/*Estilos del main - Banner*/
 .banner {
   width: 100%;
   min-width: 320px;
@@ -56,17 +50,7 @@ main {
   display: block;
   margin-top: 50px;
   text-align: center;
-  color: var(--secondary-color);
-}
-.bannerIndex {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-  url("./media/banner.jpg");
-}
-.bannerSeries {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner_series.jpg");
-}
-.bannerPeliculas {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner_movies.jpg");
+  color: white;
 }
 .banner div {
   padding: 15%;
@@ -78,12 +62,29 @@ main {
 .banner h2 {
   padding: 5%;
 }
-.bannerSeries h2,
-.bannerPeliculas h2{
-  animation-duration: 5s;
-  animation-name: entrar;
-  animation-iteration-count: 1;
+.banner p {
+  background-color: rgba(229, 9, 20, 0.2549019608);
+  padding: 5%;
+  width: 40%;
 }
+.banner p:hover {
+  transform: scale(120%);
+}
+
+.bannerIndex {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner.jpg");
+}
+
+.bannerSeries {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner_series.jpg");
+}
+
+.bannerPeliculas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner_movies.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 @keyframes entrar {
   0% {
     opacity: 0;
@@ -107,33 +108,26 @@ main {
     color: var(--primary-color);
   }
 }
-
-.banner p {
-  background-color: var(--fondo-color);
-  padding: 5%;
-  width: 40%;
-}
-.banner p:hover {
-  transform: scale(120%);
+.bannerSeries h2,
+.bannerPeliculas h2 {
+  animation: entrar 5s 1;
 }
 
-/*Estilos del main - Secciones*/
 .contenido {
-  color:var(--secondary-color);
+  color: white;
   padding: 20px 15px 10px 15px;
   display: grid;
-  grid-template-areas: 
-  "title title"
-  "contenedor contenedor";
+  grid-template-areas: "title title" "contenedor contenedor";
 }
 .contenido h2 {
   padding-bottom: 20px;
   grid-area: title;
   transition: color 5s;
 }
-.contenido h2:hover {
-  color: var(--primary-color);
+.contenido:hover {
+  color: #e50914;
 }
+
 .contenedor {
   justify-content: space-between;
   align-items: center;
@@ -144,11 +138,25 @@ main {
   grid-column-gap: 5px;
 }
 
-.card1 { grid-area: 1 / 1 / 2 / 4; }
-.card2 { grid-area: 1 / 4 / 2 / 7; }
-.card3 { grid-area: 2 / 1 / 3 / 3; }
-.card4 { grid-area: 2 / 3 / 3 / 5; }
-.card5 { grid-area: 2 / 5 / 3 / 7; }
+.card1 {
+  grid-area: 1/1/2/4;
+}
+
+.card2 {
+  grid-area: 1/4/2/7;
+}
+
+.card3 {
+  grid-area: 2/1/3/3;
+}
+
+.card4 {
+  grid-area: 2/3/3/5;
+}
+
+.card5 {
+  grid-area: 2/5/3/7;
+}
 
 .contenedor__card:hover {
   transform: scale(120%);
@@ -162,23 +170,23 @@ main {
   border-radius: 8px;
 }
 
-/*Estilos tendencias y recomendaciones*/
 #tendencias {
   padding: 50px 0 0 35px;
-  color: var(--secondary-color);
+  color: white;
 }
 #tendencias h2 {
   transition: color 5s;
 }
 #tendencias h2:hover {
-  color: var(--primary-color)
+  color: #e50914;
 }
+
 .tendencias {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
-  color: var(--secondary-color);
+  color: white;
 }
 .tendencias img {
   width: 100%;
@@ -188,35 +196,45 @@ main {
 .tendencias p {
   text-align: justify;
 }
+
 #keys {
   text-align: center;
   padding-top: 5px;
 }
 
-/*Estilos formulario de contacto*/
-#contacto,
 form {
   padding: 10px;
-  color: var(--secondary-color);
+  color: white;
+  text-align: justify;
+}
+
+#contacto {
+  padding: 10px;
+  color: white;
   text-align: justify;
 }
 #contacto h2 {
   padding: 10px;
 }
+
 fieldset {
   border-radius: 8px;
   padding: 8px;
 }
+
 input {
   width: 100%;
   border-radius: 4px;
 }
+
 textarea {
   border-radius: 8px;
 }
+
 ::placeholder {
   font-size: 60%;
 }
+
 #formulario {
   width: 100%;
   display: grid;
@@ -226,35 +244,55 @@ textarea {
   grid-row-gap: 10px;
 }
 
-.item1 { grid-area: 1 / 1 / 2 / 9; }
-.item2 { grid-area: 2 / 1 / 3 / 5; }
-.item3 { grid-area: 2 / 5 / 3 / 9; }
-.item4 { grid-area: 3 / 1 / 4 / 5; }
-.item5 { grid-area: 3 / 5 / 4 / 9; }
-.item6 { grid-area: 4 / 1 / 8 / 9; }
-.item7 { grid-area: 8 / 4 / 9 / 6; text-align: center;}
+.item1 {
+  grid-area: 1/1/2/9;
+}
+
+.item2 {
+  grid-area: 2/1/3/5;
+}
+
+.item3 {
+  grid-area: 2/5/3/9;
+}
+
+.item4 {
+  grid-area: 3/1/4/5;
+}
+
+.item5 {
+  grid-area: 3/5/4/9;
+}
+
+.item6 {
+  grid-area: 4/1/8/9;
+}
+
+.item7 {
+  grid-area: 8/4/9/6;
+  text-align: center;
+}
 
 button {
-  background-color: var(--primary-color);
+  background-color: #e50914;
   font-size: 120%;
-  padding: 10PX;
+  padding: 10px;
   border-radius: 8px;
 }
 button:hover {
-  background-color: var(--fondo-color);
-  color: var(--secondary-color);
+  background-color: rgba(229, 9, 20, 0.2549019608);
+  color: white;
 }
-/*Estilos del footer*/
+
 footer {
-  color: var(--secondary-color);
+  color: white;
   text-align: center;
   padding: 10px;
   overflow: hidden;
 }
 
-/*Responsive tableta*/
-@media screen and (min-width:760px){
-  body{
+@media screen and (min-width: 760px) {
+  body {
     font-size: 150%;
   }
   .contenido {
@@ -270,8 +308,7 @@ footer {
   .contenedor__card h3 {
     padding: 15px;
   }
-  .contenedor,
-  article {
+  .contenedor {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -279,6 +316,12 @@ footer {
   }
   .contenedor h2 {
     text-align: center;
+  }
+  article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
   }
   .bannerPeliculas {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner_movies_responsive.jpg");
@@ -293,9 +336,7 @@ footer {
     font-size: 100%;
   }
 }
-
-/*Responsive escritorio*/
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   header {
     display: flex;
     flex-direction: row;
@@ -310,7 +351,13 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+  .bannerSeries {
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
   .tendencias img {
     width: 20%;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */

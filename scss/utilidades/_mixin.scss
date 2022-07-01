@@ -1,0 +1,40 @@
+@mixin keyframes($animation-name) {
+    @keyframes #{$animation-name} {
+      @content;
+    }
+}
+  
+@mixin animation($str) {
+    animation: #{$str};
+}
+  
+@include keyframes(entrar) {
+    0% {
+        opacity: 0;
+        font-size: 60%;
+      }
+      25% {
+        opacity: 0.25;
+        font-size: 120%;
+      }
+      50% {
+        opacity: 0.5;
+        font-size: 180%;
+      }
+      75% {
+        opacity: 0.75;
+        font-size: 240%;
+      }
+      100% {
+        opacity: 1;
+        font-size: 240%;
+        color: var(--primary-color);
+      }
+}
+
+.bannerSeries,
+.bannerPeliculas {
+    h2 {
+        @include animation('entrar 5s 1');
+    }
+}

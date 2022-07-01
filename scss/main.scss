@@ -1,0 +1,12 @@
+@import "./utilidades/variables";
+@import "./base/reset.scss";
+@import "./layout/_header.scss";
+@import "./layout/main";
+@import "./layout/banner";
+@import "./utilidades/mixin";
+@import "./components/sections";
+@import "./components/tendenciasRecomendaciones";
+@import "./layout/form";
+@import "./layout/footer";
+@import "./responsive/tablet.scss";
+@import "./responsive/desktop";

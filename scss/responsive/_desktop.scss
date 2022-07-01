@@ -1,0 +1,29 @@
+@media screen and (min-width:$large) {
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      nav {
+        width: 40%;
+        padding: 0 10px 0 0;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+      }
+    }
+
+    .bannerSeries {
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .tendencias {
+        img {
+            width: 20%;
+        }
+    }
+  }
