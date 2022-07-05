@@ -1,11 +1,6 @@
 .contenido {
     color: $secondary-color;
     padding: 20px 15px 10px 15px;
-    display: grid;
-    grid-template-areas: 
-    "title title"
-    "contenedor contenedor";
-
     h2 {
         padding-bottom: 20px;
         grid-area: title;
@@ -20,32 +15,30 @@
 .contenedor {
     justify-content: space-between;
     align-items: center;
-    grid-area: contenedor;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 5px;
+    width: 100%;
+    transition: all 0.5s linear;
+    &__card {
+        &:hover {
+            transform: scale(120%);
+        }
+        
+        h3 {
+            padding: 0 0 5px 5px;
+            font-size: 90%;
+        }
+    
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
 }
 
-.card1 { grid-area: 1 / 1 / 2 / 4; }
-.card2 { grid-area: 1 / 4 / 2 / 7; }
-.card3 { grid-area: 2 / 1 / 3 / 3; }
-.card4 { grid-area: 2 / 3 / 3 / 5; }
-.card5 { grid-area: 2 / 5 / 3 / 7; }
-
-.contenedor__card {
-    
-    &:hover {
-        transform: scale(120%);
-    }
-    
-    h3 {
-        padding: 0 0 5px 5px;
-        font-size: 90%;
-    }
-
-    img {
-        width: 100%;
-        border-radius: 8px;
-    }
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: auto;
 }
+
+
