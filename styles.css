@@ -279,7 +279,7 @@ footer {
 @media screen and (min-width: 760px) {
   article {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding: 10px;
   }
@@ -289,6 +289,12 @@ footer {
   .tendencias img {
     width: 30%;
     height: auto;
+  }
+  .tendencias article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
   }
   input {
     height: 50%;
