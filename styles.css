@@ -153,6 +153,7 @@ main {
   background-size: cover;
   width: 300px;
   height: auto;
+  cursor: default;
 }
 
 #tendencias {
@@ -191,6 +192,17 @@ form {
   padding: 10px;
   color: white;
   text-align: justify;
+}
+form button {
+  background-color: #e50914;
+  font-size: 120%;
+  padding: 10px;
+  border-radius: 8px;
+}
+form button:hover {
+  background-color: rgba(229, 9, 20, 0.2549019608);
+  color: white;
+  cursor: pointer;
 }
 
 #contacto {
@@ -256,17 +268,6 @@ textarea {
 .item7 {
   grid-area: 8/4/9/6;
   text-align: center;
-}
-
-button {
-  background-color: #e50914;
-  font-size: 120%;
-  padding: 10px;
-  border-radius: 8px;
-}
-button:hover {
-  background-color: rgba(229, 9, 20, 0.2549019608);
-  color: white;
 }
 
 footer {

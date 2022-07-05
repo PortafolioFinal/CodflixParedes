@@ -2,6 +2,19 @@ form {
     padding: 10px;
     color: $secondary-color;
     text-align: justify;
+
+    button {
+        background-color: $primary-color;
+        font-size: 120%;
+        padding: 10px;
+        border-radius: 8px;
+    
+        &:hover {
+            background-color: $opacity-color;
+            color: $secondary-color;
+            cursor: pointer;
+        }
+    }
 }
 
 #contacto {
@@ -49,14 +62,4 @@ textarea {
 .item6 { grid-area: 4 / 1 / 8 / 9; }
 .item7 { grid-area: 8 / 4 / 9 / 6; text-align: center;}
 
-button {
-    background-color: $primary-color;
-    font-size: 120%;
-    padding: 10px;
-    border-radius: 8px;
-
-    &:hover {
-        background-color: $opacity-color;
-        color: $secondary-color;
-    }
-}
+ 
