@@ -1,4 +1,9 @@
 @media screen and (min-width: $medium){
+
+    .swiper-slide {
+        width: 300px;
+    }
+
     article {
         display: flex;
         flex-direction: column;
@@ -20,6 +25,9 @@
             flex-direction: row;
             justify-content: space-between;
             padding: 10px;
+        }
+        h2 {
+            height: 30px;
         }
     }
 
