@@ -157,7 +157,7 @@ main {
 }
 
 #tendencias {
-  padding: 50px 0 0 35px;
+  padding: 50px 0 15px 35px;
   color: white;
 }
 #tendencias h2 {
@@ -171,7 +171,6 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px;
   color: white;
 }
 .tendencias img {
@@ -278,31 +277,6 @@ footer {
 }
 
 @media screen and (min-width: 760px) {
-  body {
-    font-size: 150%;
-  }
-  .contenido {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .contenedor__card {
-    display: flex;
-    flex-direction: column;
-  }
-  .contenedor__card h3 {
-    padding: 15px;
-  }
-  .contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  .contenedor h2 {
-    text-align: center;
-  }
   article {
     display: flex;
     flex-direction: row;
@@ -313,13 +287,24 @@ footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner_movies_responsive.jpg");
   }
   .tendencias img {
-    width: 10%;
+    width: 30%;
+    height: auto;
   }
   input {
     height: 50%;
   }
   ::placeholder {
     font-size: 100%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px 10px;
+    grid-template-areas: "title title";
+  }
+  #tendencias {
+    grid-area: title;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -337,12 +322,12 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+  body {
+    font-size: 150%;
+  }
   .bannerSeries {
     background-repeat: no-repeat;
     background-size: 100%;
-  }
-  .tendencias img {
-    width: 20%;
   }
 }
 
