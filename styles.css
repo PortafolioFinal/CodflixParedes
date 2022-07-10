@@ -14,6 +14,10 @@ html {
   background-color: black;
 }
 
+.space {
+  padding-bottom: 10px;
+}
+
 header {
   position: relative;
   display: flex;
@@ -139,7 +143,7 @@ main {
 .contenedor {
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
   transition: all 0.5s linear;
 }
 .contenedor__card:hover {
@@ -157,7 +161,7 @@ main {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 150px;
+  width: 100px;
   height: auto;
   cursor: default;
 }
@@ -166,14 +170,14 @@ main {
   padding: 15px;
 }
 
-#tendencias {
+.tendencias-title {
   padding: 50px 0 15px 35px;
   color: white;
 }
-#tendencias h2 {
+.tendencias-title h2 {
   transition: color 5s;
 }
-#tendencias h2:hover {
+.tendencias-title h2:hover {
   color: #e50914;
 }
 
@@ -318,14 +322,13 @@ footer p {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner_movies_responsive.jpg");
   }
   .tendencias img {
-    width: 30%;
-    height: auto;
+    width: 45%;
+    height: 90%;
   }
   .tendencias article {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
   }
   .tendencias h2 {
     height: 30px;
@@ -339,11 +342,11 @@ footer p {
   .container {
     display: grid;
     grid-template-columns: 50% 1fr;
-    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
     gap: 15px 10px;
     grid-template-areas: "title title";
   }
-  #tendencias {
+  .tendencias-title {
     grid-area: title;
   }
 }
