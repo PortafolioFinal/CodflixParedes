@@ -80,18 +80,18 @@ main {
 }
 
 .bannerIndex {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/media/banner.jpg");
 }
 
 .bannerSeries {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner_series.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/media/banner_series.jpg");
 }
 .bannerSeries h2 {
   font-size: 200%;
 }
 
 .bannerPeliculas {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner_movies.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/media/banner_movies.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -319,7 +319,7 @@ footer p {
     padding: 10px;
   }
   .bannerPeliculas {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./media/banner_movies_responsive.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/media/banner_movies_responsive.jpg");
   }
   .tendencias img {
     width: 45%;
