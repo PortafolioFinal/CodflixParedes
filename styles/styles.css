@@ -28,6 +28,7 @@ header {
   height: 10px;
   text-align: center;
   margin-top: 30px;
+  font-size: 130%;
 }
 header nav ul {
   display: flex;
@@ -40,7 +41,6 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 120%;
   transition: color 5s;
 }
 header nav ul li a:hover {
@@ -59,10 +59,10 @@ main {
   margin-top: 50px;
   text-align: center;
   color: white;
+  font-size: 120%;
 }
 .banner div {
   padding: 15%;
-  font-size: 120%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -211,7 +211,7 @@ main {
 }
 
 form {
-  padding: 10px;
+  padding: 0 30px 30px 30px;
   color: white;
   text-align: justify;
 }
@@ -228,7 +228,7 @@ form button:hover {
 }
 
 #contacto {
-  padding: 10px;
+  padding: 30px 30px 20px 30px;
   color: white;
   text-align: justify;
 }
@@ -259,8 +259,8 @@ textarea {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  grid-column-gap: 12px;
-  grid-row-gap: 10px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
 }
 
 .item1 {
@@ -309,6 +309,9 @@ footer p {
 }
 
 @media screen and (min-width: 760px) {
+  main {
+    font-size: 150%;
+  }
   .swiper-slide {
     width: 300px;
   }
@@ -321,9 +324,12 @@ footer p {
   .bannerPeliculas {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/media/banner_movies_responsive.jpg");
   }
+  .tendencias {
+    font-size: 70%;
+  }
   .tendencias img {
-    width: 45%;
-    height: 90%;
+    width: 40%;
+    height: 85%;
   }
   .tendencias article {
     display: flex;
@@ -374,6 +380,9 @@ footer p {
   .bannerSeries {
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+  #bodyContacto {
+    font-size: 130%;
   }
 }
 

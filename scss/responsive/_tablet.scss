@@ -1,4 +1,7 @@
 @media screen and (min-width: $medium){
+    main {
+        font-size: 150%;
+    }
 
     .swiper-slide {
         width: 300px;
@@ -16,9 +19,11 @@
     }
 
     .tendencias {
+        font-size: 70%;
+
         img {
-            width: 45%;
-            height: 90%;
+            width: 40%;
+            height: 85%;
         }
         article {
             display: flex;
