@@ -1,5 +1,6 @@
 @import "./utilidades/variables";
 @import "./base/reset.scss";
+@import "./utilidades/display";
 @import "./layout/_header.scss";
 @import "./layout/main";
 @import "./layout/banner";
@@ -10,3 +11,4 @@
 @import "./layout/footer";
 @import "./responsive/tablet.scss";
 @import "./responsive/desktop";
+

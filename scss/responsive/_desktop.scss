@@ -1,4 +1,4 @@
-@media screen and (min-width:$large) {
+@media screen and (min-width: map-get($map: $breakpoint, $key: large)) {
     header {
       display: flex;
       flex-direction: row;

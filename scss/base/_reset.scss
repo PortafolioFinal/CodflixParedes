@@ -10,7 +10,7 @@
 html {
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
-    background-color: $fondo-color;
+    background-color: map-get($map: $colores, $key: fondo-color);
 }
 
 .space {
