@@ -1,4 +1,4 @@
-@media screen and (min-width:$large) {
+@media screen and (min-width: map-get($map: $breakpoint, $key: large)) {
     header {
       display: flex;
       flex-direction: row;
@@ -15,15 +15,17 @@
         }
       }
     }
-
+    body {
+      font-size: 150%;
+    }
+    .swiper-slide {
+      width: 350px;
+    }
     .bannerSeries {
         background-repeat: no-repeat;
         background-size: 100%;
     }
-
-    .tendencias {
-        img {
-            width: 20%;
-        }
+    #bodyContacto {
+      font-size: 130%;
     }
   }

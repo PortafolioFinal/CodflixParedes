@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
+    <meta name="keywords" content="PELICULAS, SERIES, DRAMA, ACCIÓN, COMEDIA, TENDENCIAS, TERROR">
+    <meta name="description" content="Encuentra todas las películas en cine, en tendencia, las mejores películas para ver, las películas de acción">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="icon" href="../media/codflix.ico">
-    <title>CODFLIX</title>
+    <title>CODFLIX-PELÍCULAS</title>
 </head>
 <body>
     <!--Encabezado de la página Películas-->
@@ -34,81 +37,90 @@
         <section class="contenido">
             <h2>Recomendados</h2>
             <!--Slider-->
-            <div class="contenedor">
-                <article class="contenedor__card card1">
-                    <h3>Fantastic Beasts</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/jrgifaYeUtTnaH7NF5Drkgjg2MB.jpg" alt="movie 1">
-                </article>
-                <article class="contenedor__card card2">
-                    <h3>Morbius</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg" alt="movie 2">
-                </article>
-                <article class="contenedor__card card3">
-                    <h3>The Lost City</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/neMZH82Stu91d3iqvLdNQfqPPyl.jpg" alt="movie 3">
-                </article>
-                <article class="contenedor__card card4">
-                    <h3>Sonic</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg" alt="movie 1">
-                </article>
-                <article class="contenedor__card card5">
-                    <h3>The Northman</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg" alt="movie 2">
-                </article>
+            <div class="contenedor swiper-container">
+                <div class="swiper-wrapper">
+                    <article class="contenedor__card swiper-slide">
+                        <h3>Fantastic Beasts</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/jrgifaYeUtTnaH7NF5Drkgjg2MB.jpg" alt="movie 1">
+                    </article>
+                    <article class="contenedor__card swiper-slide">
+                        <h3>Morbius</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg" alt="movie 2">
+                    </article>
+                    <article class="contenedor__card swiper-slide">
+                        <h3>The Lost City</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/neMZH82Stu91d3iqvLdNQfqPPyl.jpg" alt="movie 3">
+                    </article>
+                    <article class="contenedor__card swiper-slide">
+                        <h3>Sonic</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg" alt="movie 1">
+                    </article>
+                    <article class="contenedor__card swiper-slide">
+                        <h3>The Northman</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg" alt="movie 2">
+                    </article>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <!--Sección Acción-->
         <section class="contenido">
             <h2>Acción</h2>
             <!--Slider-->
-            <div class="contenedor">
-                <article class="contenedor__card card1">
-                    <h3>Memory</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/4Q1n3TwieoULnuaztu9aFjqHDTI.jpg" alt="movie 3">
-                </article>
-                <article class="contenedor__card card2">
-                    <h3>Uncharted</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/tlZpSxYuBRoVJBOpUrPdQe9FmFq.jpg" alt="movie 1">
-                </article>
-                <article class="contenedor__card card3">
-                    <h3>Doctor Strange</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="movie 2">
-                </article>
-                <article class="contenedor__card card4">
-                    <h3>Spider-Man</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" alt="movie 3">
-                </article>
-                <article class="contenedor__card card5">
-                    <h3>Yaksha</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/9eiUNsUAw2iwVyMeXNNiNQQad4E.jpg" alt="movie 5">
-                </article>
+            <div class="contenedor swiper-container">
+                <div class="swiper-wrapper">
+                    <article class="contenedor__card swiper-slide">
+                        <h3>Memory</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/4Q1n3TwieoULnuaztu9aFjqHDTI.jpg" alt="movie 3">
+                    </article>
+                    <article class="contenedor__card swiper-slide">
+                        <h3>Uncharted</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/tlZpSxYuBRoVJBOpUrPdQe9FmFq.jpg" alt="movie 1">
+                    </article>
+                    <article class="contenedor__card swiper-slide">
+                        <h3>Doctor Strange</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="movie 2">
+                    </article>
+                    <article class="contenedor__card swiper-slide">
+                        <h3>Spider-Man</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" alt="movie 3">
+                    </article>
+                    <article class="contenedor__card swiper-slide">
+                        <h3>Yaksha</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/9eiUNsUAw2iwVyMeXNNiNQQad4E.jpg" alt="movie 5">
+                    </article>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <!--Sección Comedias-->
         <section class="contenido">
             <h2>Comedias</h2>
             <!--Slider-->
-            <div class="contenedor">
-                <article class="contenedor__card card1">
-                    <h3>Loin du périph</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/h5hVeCfYSb8gIO0F41gqidtb0AI.jpg" alt="movie 1">
-                </article>
-                <article class="contenedor__card card2">
-                    <h3>Marmaduke</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/bMUhBeMp0vLQzaPBX0izFdnFvh0.jpg" alt="movie 2">
-                </article>
-                <article class="contenedor__card card3">
-                    <h3>F*ck De Liefde</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/u71tsZpPsIK9kTXbxHtSbNr6oSd.jpg" alt="movie 3">
-                </article>
-                <article class="contenedor__card card4">
-                    <h3>Cuarentones</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/xARmbhKwPFc1oMkcis0pAHFBMdX.jpg" alt="movie 4">
-                </article>
-                <article class="contenedor__card card5">
-                    <h3>Sans répit</h3>
-                    <img src="https://image.tmdb.org/t/p/w500/9MP21x0OPv0R72obd63tMHssmGt.jpg" alt="movie 5">
-                </article>
+            <div class="contenedor swiper-container">
+                <div class="swiper-wrapper">
+                    <article class="contenedor__card swiper-slide">
+                        <h3>Loin du périph</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/h5hVeCfYSb8gIO0F41gqidtb0AI.jpg" alt="movie 1">
+                    </article>
+                    <article class="contenedor__card swiper-slide">
+                        <h3>Marmaduke</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/bMUhBeMp0vLQzaPBX0izFdnFvh0.jpg" alt="movie 2">
+                    </article>
+                    <article class="contenedor__card swiper-slide">
+                        <h3>F*ck De Liefde</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/u71tsZpPsIK9kTXbxHtSbNr6oSd.jpg" alt="movie 3">
+                    </article>
+                    <article class="contenedor__card swiper-slide">
+                        <h3>Cuarentones</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/xARmbhKwPFc1oMkcis0pAHFBMdX.jpg" alt="movie 4">
+                    </article>
+                    <article class="contenedor__card swiper-slide">
+                        <h3>Sans répit</h3>
+                        <img src="https://image.tmdb.org/t/p/w500/9MP21x0OPv0R72obd63tMHssmGt.jpg" alt="movie 5">
+                    </article>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
     </main>
@@ -116,5 +128,25 @@
     <footer>
         <p>@ 2022 CODFLIX, Inc</p>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 10,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        loop: true,
+      });
+    </script>
 </body>
 </html>

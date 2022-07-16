@@ -1,3 +1,6 @@
+:root {
+    --swiper-theme-color: #e50914;
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,5 +10,9 @@
 html {
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
-    background-color: $fondo-color;
+    background-color: map-get($map: $colores, $key: fondo-color);
+}
+
+.space {
+    padding-bottom: 10px;
 }

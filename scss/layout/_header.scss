@@ -1,6 +1,6 @@
 header {
+    @extend .display;
     position: relative;
-    display:flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -8,6 +8,7 @@ header {
     height: 10px;
     text-align: center;
     margin-top: 30px;
+    font-size: 130%;
 
     nav ul {
         display:flex;
@@ -19,12 +20,11 @@ header {
 
             a {
                 text-decoration: none;
-                color: $secondary-color;
-                font-size: 120%;
+                color: map-get($map: $colores, $key: secondary-color);
                 transition: color 5s;
 
                 &:hover {
-                    color: $primary-color;
+                    color: map-get($map: $colores, $key: primary-color);
                 }
             }
         }

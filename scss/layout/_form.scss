@@ -1,12 +1,25 @@
 form {
-    padding: 10px;
-    color: $secondary-color;
+    padding: 0 30px 30px 30px;
+    color: map-get($map: $colores, $key: secondary-color);
     text-align: justify;
+
+    button {
+        background-color: map-get($map: $colores, $key: primary-color);
+        font-size: 120%;
+        padding: 10px;
+        border-radius: 8px;
+    
+        &:hover {
+            background-color: map-get($map: $colores, $key: opacity-color);
+            color: map-get($map: $colores, $key: secondary-color);
+            cursor: pointer;
+        }
+    }
 }
 
 #contacto {
-    padding: 10px;
-    color: $secondary-color;
+    padding: 30px 30px 20px 30px;
+    color: map-get($map: $colores, $key: secondary-color);
     text-align: justify;
 
     h2 {
@@ -37,8 +50,8 @@ textarea {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    grid-column-gap: 12px;
-    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
 }
 
 .item1 { grid-area: 1 / 1 / 2 / 9; }
@@ -49,14 +62,4 @@ textarea {
 .item6 { grid-area: 4 / 1 / 8 / 9; }
 .item7 { grid-area: 8 / 4 / 9 / 6; text-align: center;}
 
-button {
-    background-color: $primary-color;
-    font-size: 120%;
-    padding: 10px;
-    border-radius: 8px;
-
-    &:hover {
-        background-color: $opacity-color;
-        color: $secondary-color;
-    }
-}
+ 
