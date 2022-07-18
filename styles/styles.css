@@ -379,6 +379,9 @@ footer p {
     background-repeat: no-repeat;
     background-size: 100%;
   }
+  .contenedor__card h3 {
+    font-size: 130%;
+  }
   #bodyContacto {
     font-size: 130%;
   }
