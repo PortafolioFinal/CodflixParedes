@@ -1,4 +1,7 @@
 @media screen and (min-width: map-get($map: $breakpoint, $key: medium)){
+    header {
+        font-size: 130%;
+    }
     main {
         font-size: 150%;
     }
