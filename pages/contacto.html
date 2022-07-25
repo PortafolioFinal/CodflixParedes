@@ -12,12 +12,10 @@
   <body>
     <!--Encabezado de la página Contacto-->
     <header>
-      <h1>
-        <a href="../index.html"
-          ><img
-            src="https://fontmeme.com/permalink/220531/9182e37213c203929df8ecf3f4db7bbc.png"
-            alt="fuente-de-netflix"
-        /></a>
+      <h1 class="header">
+        <a href="../index.html">
+          <img src="https://fontmeme.com/permalink/220531/9182e37213c203929df8ecf3f4db7bbc.png" alt="fuente-de-netflix"/>
+        </a>
       </h1>
     </header>
     <!--Cuerpo de la página-->
@@ -34,36 +32,37 @@
         <!--Formulario de contacto-->
         <form>
           <fieldset>
-            <legend>Envía un mensaje:</legend>
-            
+            <legend>Envía un mensaje:</legend> 
             <div id="formulario">
               <p class="item1">
                 Completa el siguiente formulario, y un miembro de nuestro equipo se pondrá en contacto para obtener más información sobre sus dudas e inquietudes.
               </p>
               <div class="item2">
-                <label>Nombre</label>
-                <input type="text" placeholder="Escriba su nombre completo" />
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre completo" />
               </div>
               <div class="item3">
-                <label>Email</label>
-                <input type="text" placeholder="usuario@mail.com" />
+                <label for="mail">Email</label>
+                <input type="text" name="mail" id="mail" placeholder="usuario@mail.com" />
               </div>
               <div class="item4">
-                <label>Telefono</label>
-                <input type="number" placeholder="Número de teléfono" />
+                <label for="telefono">Telefono</label>
+                <input type="number" name="telefono" id="telefono" placeholder="Número de teléfono" />
               </div>
               <div class="item5">
-                <label>Organización</label>
-                <input type="text" placeholder="Nombre de la organización" />
+                <label for="org">Organización</label>
+                <input type="text" name="org" id="org" placeholder="Nombre de la organización" />
               </div>
               <textarea
                 cols="100"
                 rows="15"
                 placeholder="Escriba aquí el mensaje"
+                name="mensaje" 
+                id="mensaje"
                 class="item6"
               ></textarea>
               <div  class="item7">
-                <button>ENVIAR</button>
+                <button type="submit" name="enviar" id="enviar">ENVIAR</button>
             </div>
             </div>   
           </fieldset>

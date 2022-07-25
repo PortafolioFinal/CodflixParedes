@@ -202,9 +202,9 @@ main {
   padding: 0 0 10px 0;
 }
 
-#keys {
-  text-align: center;
-  padding-top: 5px;
+.keys {
+  text-align: center !important;
+  padding-top: 8px;
 }
 
 form {
